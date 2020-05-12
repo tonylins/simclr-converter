@@ -18,7 +18,7 @@ This is a converter to convert TensorFlow checkpoints provided in [SimCLR](https
 
 ### Performance
 
-To validate the correctness of the conversion, I tested the performance of the models using PyTorch standard augmentation on ImageNet (but **without normalization**, as the original TF models were not trained with augmentation), using commands:
+To validate the correctness of the conversion, I tested the performance of the models using PyTorch standard augmentation on ImageNet (but **without normalization**, as the original TF models were not trained with normalization), using commands:
 
 ```
 python eval.py /path/to/imagenet -a resnet50-1x/resnet50-2x/resnet50-4x
